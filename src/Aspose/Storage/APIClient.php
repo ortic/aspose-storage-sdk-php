@@ -117,8 +117,6 @@ class APIClient {
 //
 //		$url = $this->apiServer . $resourcePath;
 
-        print $url;
-
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_TIMEOUT, 180);
         // return the result on success, rather than just TRUE
