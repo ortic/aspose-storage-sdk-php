@@ -22,7 +22,7 @@ class StorageApiTest extends PHPUnit_Framework_TestCase {
     
     public function testDeleteFolder()
     {
-        $result = $this->storage->DeleteFolder($Path="testing", $storage = null, $recursive = null);        
+        $result = $this->storage->DeleteFolder($Path="myFolder", $storage = null, $recursive = true);        
         $this->assertEquals(200, $result->Code);
     }
     

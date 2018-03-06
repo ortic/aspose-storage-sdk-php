@@ -519,10 +519,12 @@ class StorageApi {
             $resourcePath = str_replace("&storage={" . "storage" . "}", "", $resourcePath);
         }
         if ($recursive != null) {
-            $resourcePath = str_replace("{" . "recursive" . "}", $this->apiClient->toQueryValue($recursive), $resourcePath);
+            $converted_recursive = ($recursive) ? 'true' : 'false';
+            $resourcePath = str_replace("{" . "recursive" . "}", $this->apiClient->toQueryValue($converted_recursive), $resourcePath);
         } else {
             $resourcePath = str_replace("&recursive={" . "recursive" . "}", "", $resourcePath);
         }
+
         //make the API Call
         if (!isset($body)) {
             $body = null;
