@@ -4,6 +4,7 @@
     "type":         "library",
     "keywords" :    ["aspose", "php", "aspose cloud", "storage"],
     "homepage":     "https://github.com/aspose-total/Aspose.Total-for-Cloud/tree/master/SDKs/Aspose.Storage-Cloud-SDK-for-PHP",
+    "license": "MIT",
     "authors": [
         {
             "name":     "Muhammad Sohail",
@@ -18,5 +19,6 @@
         "psr-0": {
             "Aspose": "src/"
         }
-    }
+    },
+    "version": "1.0.1"
 }
